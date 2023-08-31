@@ -6,7 +6,7 @@ getButton = document.querySelector("form button");
 for (let i = 0; i < dropList.length; i++) {
     for(let currency_code in country_list){
         // selecting NGN by default as FROM currency and PKR as TO currency
-        let selected = i == 0 ? currency_code == "NGN" ? "selected" : "" : currency_code == "PKR" ? "selected" : "";
+        let selected = i == 0 ? currency_code == "NGN" ? "selected" : "" : currency_code == "VND" ? "selected" : "";
         // creating option tag with passing currency code as a text and value
         let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
         // inserting options tag inside select tag
